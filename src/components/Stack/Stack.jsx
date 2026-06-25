@@ -3,23 +3,27 @@ import './Stack.css'
 const categories = [
   {
     label: 'Frontend',
-    items: ['React', 'JavaScript', 'TypeScript', 'HTML', 'CSS', 'Vite', 'Tailwind'],
+    items: ['React', 'JavaScript', 'TypeScript', 'HTML', 'CSS', 'Vite', 'Tailwind', 'Bootstrap'],
   },
   {
     label: 'Backend',
-    items: ['Node.js', 'NestJS', 'Express', 'REST APIs', 'Firebase'],
+    items: ['Node.js', 'NestJS', 'Express', 'REST APIs'],
   },
   {
-    label: 'Bases de datos',
-    items: ['MySQL', 'MongoDB', 'Firestore'],
+    label: 'Bases de datos y Servicios',
+    items: ['MySQL', 'MongoDB', 'Firebase', 'Firestore', 'Firebase Auth'],
   },
   {
     label: 'Deploy',
-    items: ['Vercel', 'Render', 'Firebase Hosting'],
+    items: ['Vercel', 'Render', 'Firebase Hosting', 'Railway', 'GitHub Pages'],
   },
   {
     label: 'Herramientas',
     items: ['Git', 'GitHub', 'Postman', 'Figma'],
+  },
+  {
+    label: 'Prácticas',
+    items: ['Responsive Design', 'SSR', 'SEO técnico', 'Clean Code', 'MVC', 'Scrum', 'PWA'],
   },
 ]
 

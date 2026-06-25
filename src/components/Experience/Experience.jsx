@@ -5,7 +5,7 @@ const work = [
   {
     role: 'Fullstack Developer Freelance',
     company: 'Clientes particulares & empresas',
-    period: 'Julio. 2025 — presente',
+    period: 'Jul. 2025 — presente',
     desc: 'Desarrollo soluciones web para clientes, desde interfaces con React hasta APIs REST, bases de datos y despliegues. Participo en el relevamiento, arquitectura, implementación y publicación de cada producto.',
     tags: ['React', 'Node.js', 'NestJS', 'MongoDB', 'MySQL'],
   },

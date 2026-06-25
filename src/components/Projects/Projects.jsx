@@ -13,14 +13,14 @@ const projects = [
     name: 'RepasioAI',
     desc: 'Plataforma de estudio que ayuda a organizar el aprendizaje mediante flashcards generadas con inteligencia artificial. Permite crear mazos, practicar con repetición espaciada y generar preguntas automáticamente.',
     url: 'https://repasioai.vercel.app/',
-    tags: ['React', 'NestJS', 'IA', 'Brevo'],
+    tags: ['React', 'NestJS', 'IA API', 'Tailwind CSS'],
     status: 'Live',
   },
   {
     name: 'Metalúrgica Tesei',
     desc: 'Sitio web institucional para una empresa metalúrgica argentina. Incluye presentación de servicios y productos, formulario de contacto y optimización para mejorar su visibilidad en buscadores.',
     url: 'https://www.metalurgicatesei.com.ar/',
-    tags: ['Node.js', 'EJS', 'JavaScript', 'CSS', 'SEO'],
+    tags: ['Node.js', 'EJS', 'JavaScript', 'SSR', 'SEO'],
     status: 'Live',
   },
   {
