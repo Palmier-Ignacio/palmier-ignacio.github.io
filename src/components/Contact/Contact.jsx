@@ -37,7 +37,7 @@ export default function Contact() {
               Estoy disponible para oportunidades Frontend y Fullstack, proyectos freelance
               y colaboraciones. Podés contactarme por correo, LinkedIn o GitHub.
             </p>
-            <a href="/Ignacio-Palmier-CV.pd" className="btn btn-primary contact-cta">
+            <a href="/Ignacio-Palmier-CV.pdf" className="btn btn-primary contact-cta">
               <FileText size={15} />
               Ver CV
             </a>
