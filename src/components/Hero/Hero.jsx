@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="container hero-content">
         <div className="hero-badge fade-up">
           <span className="badge-dot" />
-          Disponible para nuevos proyectos
+          Disponible para oportunidades Frontend y Fullstack
         </div>
 
         <h1 className="hero-title fade-up delay-1">
@@ -17,20 +17,25 @@ export default function Hero() {
         </h1>
 
         <p className="hero-role fade-up delay-2">
-          Fullstack Developer
+          Fullstack Developer · React / Node.js
         </p>
 
         <p className="hero-desc fade-up delay-3">
-          Construyo productos digitales de punta a punta: desde la base de datos hasta la interfaz.
-          Apasionado por el código limpio, la buena arquitectura y enseñar lo que sé.
+          Desarrollo aplicaciones web modernas con React, Node.js y bases de datos.
+          Trabajo desde interfaces claras y responsive hasta APIs, autenticación e integración de servicios.
         </p>
 
         <div className="hero-actions fade-up delay-4">
           <a href="#projects" className="btn btn-primary">
             Ver proyectos
           </a>
-          <a href="#contact" className="btn btn-outline">
-            Contactarme
+          <a
+            href="/Ignacio-Palmier-CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-outline"
+          >
+            Ver CV
           </a>
         </div>
 
@@ -47,7 +52,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <a href="#about" className="scroll-hint" aria-label="Scroll down">
+      <a href="#projects" className="scroll-hint" aria-label="Scroll down">
         <ArrowDown size={16} />
       </a>
     </section>

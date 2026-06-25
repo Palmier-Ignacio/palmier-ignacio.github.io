@@ -1,30 +1,34 @@
-import { ExternalLink, Github } from 'lucide-react'
+import { ExternalLink} from 'lucide-react'
 import './Projects.css'
 
 const projects = [
   {
-    name: 'RepasioAI',
-    desc: 'Plataforma de estudio con flashcards generadas por inteligencia artificial. Permite crear mazos de tarjetas, estudiar con repetición espaciada y generar preguntas automáticamente usando IA.',
-    url: 'https://repasioai.vercel.app/',
-    tags: ['React', 'API IA', 'Nest', 'Tailwind'],
+    name: 'Stylo Space',
+    desc: 'Plataforma web de reservas para una barbería. Permite a los clientes elegir servicios, consultar horarios disponibles y reservar turnos. Incluye un panel de administración para gestionar agenda, servicios, precios, disponibilidad y reprogramaciones.',
+    url: 'https://stylo-space-barberia.vercel.app/',
+    tags: ['React', 'Node.js', 'Express', 'Firebase', 'Brevo'],
     status: 'Live',
-    accent: '#C8602A',
+  },
+  {
+    name: 'RepasioAI',
+    desc: 'Plataforma de estudio que ayuda a organizar el aprendizaje mediante flashcards generadas con inteligencia artificial. Permite crear mazos, practicar con repetición espaciada y generar preguntas automáticamente.',
+    url: 'https://repasioai.vercel.app/',
+    tags: ['React', 'NestJS', 'IA', 'Brevo'],
+    status: 'Live',
   },
   {
     name: 'Metalúrgica Tesei',
-    desc: 'Sitio institucional completo para empresa metalúrgica argentina. Diseño profesional, catálogo de productos, formulario de contacto y optimización SEO para posicionamiento web.',
+    desc: 'Sitio web institucional para una empresa metalúrgica argentina. Incluye presentación de servicios y productos, formulario de contacto y optimización para mejorar su visibilidad en buscadores.',
     url: 'https://www.metalurgicatesei.com.ar/',
-    tags: ['Node.js', 'CSS', 'EJS', 'Javascript', 'SEO'],
+    tags: ['Node.js', 'EJS', 'JavaScript', 'CSS', 'SEO'],
     status: 'Live',
-    accent: '#3A7BD5',
   },
   {
-    name: 'Más proyectos próximamente',
-    desc: 'Estoy trabajando en nuevos proyectos que se agregarán aquí. Si querés ver más de mi trabajo, visitá mi GitHub.',
-    url: 'https://github.com/palmier-Ignacio',
-    tags: ['En construcción'],
-    status: 'Soon',
-    accent: '#888',
+    name: 'Listamos',
+    desc: 'Aplicación web para crear y compartir listas de compras. Permite que varias personas agreguen productos, marquen compras, dejen comentarios e inviten a otros miembros para colaborar en tiempo real.',
+    url: 'https://listamosapp-20362.firebaseapp.com/',
+    tags: ['React', 'TypeScript', 'Firebase', 'Firestore', 'PWA'],
+    status: 'Building',
   },
 ]
 
@@ -32,8 +36,8 @@ export default function Projects() {
   return (
     <section id="projects">
       <div className="container">
-        <p className="section-label">Proyectos</p>
-        <h2 className="section-title">Lo que construí</h2>
+        <p className="section-label">Proyectos destacados</p>
+        <h2 className="section-title">Productos web que diseñé y desarrollé</h2>
 
         <div className="projects-grid">
           {projects.map((p, i) => (
@@ -46,32 +50,40 @@ export default function Projects() {
 }
 
 function ProjectCard({ project: p }) {
-  return (
-    <div className={`project-card ${p.status === 'Soon' ? 'project-card--soon' : ''}`}>
-      <div className="project-card-top">
-        <div className="project-header">
-          <h3 className="project-name">{p.name}</h3>
-          <span className={`project-status project-status--${p.status.toLowerCase()}`}>
-            {p.status}
-          </span>
-        </div>
-        <p className="project-desc">{p.desc}</p>
-      </div>
-      <div className="project-footer">
-        <div className="project-tags">
-          {p.tags.map(t => <span className="tag" key={t}>{t}</span>)}
-        </div>
-        {p.status !== 'Soon' && (
-          <a href={p.url} target="_blank" rel="noopener noreferrer" className="project-link" aria-label={`Ver ${p.name}`}>
-            <ExternalLink size={15} />
-          </a>
-        )}
-        {p.status === 'Soon' && (
-          <a href={p.url} target="_blank" rel="noopener noreferrer" className="project-link" aria-label="GitHub">
-            <Github size={15} />
-          </a>
-        )}
-      </div>
+return (
+<article className="project-card">
+  <div className="project-card-top">
+
+    <div className="project-header">
+      <h3 className="project-name">{p.name}</h3>
+      <span className={`project-status project-status--${p.status.toLowerCase()}`}>
+        {p.status === 'Live' ? 'En vivo' : 'En evolución'}
+      </span>
     </div>
-  )
+
+    <p className="project-desc">{p.desc}</p>
+
+  </div>
+
+  <div className="project-footer">
+    <div className="project-tags">
+      {p.tags.map(tag => (
+        <span className="tag" key={tag}>{tag}</span>
+      ))}
+    </div>
+
+    <a
+      href={p.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="project-link"
+      aria-label={`Ver ${p.name}`}
+      title={`Ver ${p.name}`}
+    >
+      <ExternalLink size={15} />
+    </a>
+  </div>
+</article>
+
+)
 }

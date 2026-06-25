@@ -17,9 +17,8 @@ export default function About() {
               Me interesa construir soluciones que realmente funcionen, sean mantenibles y aporten valor real.
             </p>
             <p>
-              Además de desarrollar, trabajo como docente universitario de programación en la Universidad
-              de San Andrés (UDESA), lo que me mantiene en contacto constante con lo esencial del oficio
-              y me permite explicar bien lo que hago.
+              Además de desarrollar, me desempeño como docente universitario de programación
+              en materias dictadas para la Universidad de San Andrés (UdeSA) a través de Digital House, lo que me mantiene en contacto constante con lo esencial del oficio y me permite explicar bien lo que hago.
             </p>
             <p>
               Tengo experiencia trabajando en equipo en entornos de empresa, en modo freelance y en proyectos personales.
@@ -40,14 +39,18 @@ export default function About() {
                 <GraduationCap size={15} className="meta-icon" />
                 <div>
                   <span className="meta-label">Educación</span>
-                  <span className="meta-value">Tec. en Programación + Lic. en Informática</span>
+                  <span className="meta-value">
+                    Tecnicatura en Programación · Licenciatura en Informática
+                  </span>
                 </div>
               </div>
               <div className="meta-item">
                 <Code2 size={15} className="meta-icon" />
                 <div>
                   <span className="meta-label">Rol actual</span>
-                  <span className="meta-value">Dev Fullstack Freelancer · Docente</span>
+                  <span className="meta-value">
+                    Fullstack Developer Freelance · Docente Universitario
+                  </span>
                 </div>
               </div>
             </div>

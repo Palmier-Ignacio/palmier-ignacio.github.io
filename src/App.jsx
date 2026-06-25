@@ -28,10 +28,10 @@ function App() {
       <main>
         <Hero />
         <hr className="divider" />
-        <About />
         <Projects />
-        <Stack />
         <Experience />
+        <Stack />
+        <About />
         <Contact />
       </main>
       <Footer />

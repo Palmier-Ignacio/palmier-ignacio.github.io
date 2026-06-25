@@ -1,4 +1,4 @@
-import { Mail, Github, Linkedin, Send } from 'lucide-react'
+import { Mail, Github, Linkedin, FileText } from 'lucide-react'
 import './Contact.css'
 
 const links = [
@@ -30,15 +30,16 @@ export default function Contact() {
         <div className="contact-layout">
           <div className="contact-left">
             <h2 className="section-title contact-title">
-              ¿Tenés un proyecto<br />en mente?
+              ¿Buscás un desarrollador<br />para tu equipo?
             </h2>
+
             <p className="contact-sub">
-              Estoy disponible para proyectos freelance, colaboraciones o simplemente charlar sobre tecnología. 
-              No dudes en escribirme.
+              Estoy disponible para oportunidades Frontend y Fullstack, proyectos freelance
+              y colaboraciones. Podés contactarme por correo, LinkedIn o GitHub.
             </p>
             <a href="mailto:palmiernignacio@gmail.com" className="btn btn-primary contact-cta">
-              <Send size={15} />
-              Escribirme un correo
+              <FileText size={15} />
+              Ver CV
             </a>
           </div>
           <div className="contact-links">

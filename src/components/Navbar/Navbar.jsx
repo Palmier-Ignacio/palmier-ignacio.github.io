@@ -3,10 +3,10 @@ import { Sun, Moon, Menu, X } from 'lucide-react'
 import './Navbar.css'
 
 const links = [
-  { href: '#about', label: 'Sobre mí' },
   { href: '#projects', label: 'Proyectos' },
-  { href: '#stack', label: 'Stack' },
   { href: '#experience', label: 'Experiencia' },
+  { href: '#stack', label: 'Stack' },
+  { href: '#about', label: 'Sobre mí' },
   { href: '#contact', label: 'Contacto' },
 ]
 

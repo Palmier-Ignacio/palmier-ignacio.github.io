@@ -3,19 +3,23 @@ import './Stack.css'
 const categories = [
   {
     label: 'Frontend',
-    items: ['React', 'JavaScript', 'HTML', 'CSS', 'Vite', 'Bootstrap', 'Tailwind'],
+    items: ['React', 'JavaScript', 'TypeScript', 'HTML', 'CSS', 'Vite', 'Tailwind'],
   },
   {
     label: 'Backend',
-    items: ['Node.js', 'NestJS', 'Express', 'Firebase'],
+    items: ['Node.js', 'NestJS', 'Express', 'REST APIs', 'Firebase'],
   },
   {
     label: 'Bases de datos',
     items: ['MySQL', 'MongoDB', 'Firestore'],
   },
   {
+    label: 'Deploy',
+    items: ['Vercel', 'Render', 'Firebase Hosting'],
+  },
+  {
     label: 'Herramientas',
-    items: ['GitHub', 'VS Code', 'Figma', 'Trello', 'Postman'],
+    items: ['Git', 'GitHub', 'Postman', 'Figma'],
   },
 ]
 
